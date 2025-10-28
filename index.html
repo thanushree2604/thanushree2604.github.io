@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanushree N S | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #f8fbf9, #e0f0e8);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ---------- Header Section (Profile) ---------- */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #43a047, #66bb6a);
+      color: white;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+
+    header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* ---------- Container Sections ---------- */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+    section {
+      padding: 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      text-align: center;
+      color: #4caf50;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0078d4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Skills Section ---------- */
+    .skills {
+      text-align: center;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #e0f7e8;
+      color: #2e7d32;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* ---------- Contact Section ---------- */
+    .contact p {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      header img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="profile.jpg" alt="Thanushree N S" />
+    <h1>Thanushree N S</h1>
+    <p>Computer Science Student | Data Science & AI Enthusiast</p>
+    <a href="thanushree.pdf" target="_blank" 
+   style="display:inline-block; margin-top:15px; padding:10px 18px; background:#fff; color:#2e7d32; 
+          border-radius:25px; font-weight:bold; text-decoration:none; transition:0.3s;">
+  📄 Download Resume
+</a>
+
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Enthusiastic and highly motivated Computer Science student with a keen interest in
+        <b>Data Science</b> and <b>Artificial Intelligence</b>. Skilled in Python, data analysis,
+        machine learning, and data visualization. Adept at applying theoretical knowledge to
+        real-world problems through academic projects and coursework. Passionate about
+        contributing meaningfully to data-driven projects and AI research.
+      </p>
+    </section>
+
+    <section class="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <b><a href="https://github.com/thanushree2604/Voice-Controlled-Object-Detection" target="_blank">
+        Voice Controlled Object Detection
+      </a></b>
+      — Integrated computer vision and speech recognition using YOLO and SpeechRecognition libraries.
+    </li>
+
+    <li>
+      <b><a href="https://github.com/thanushree2604/Voice-Activated-Sign-Language-Detector" target="_blank">
+        Voice-Activated Sign Language Detector
+      </a></b>
+      — Real-time gesture recognition using Python, OpenCV, and MediaPipe with text-to-speech output.
+    </li>
+
+    <li>
+      <b><a href="https://github.com/thanushree2604/voice-coder" target="_blank">
+        Voice Coder Project
+      </a></b>
+      — Converts spoken language into executable code using NLP and speech recognition.
+    </li>
+
+    <li>
+      <b><a href="https://github.com/thanushree2604/ai-cheating-detection" target="_blank">
+        AI-Based Cheating Detection
+      </a></b>
+      — Developed a vision-based system for monitoring online exams with machine learning algorithms.
+    </li>
+
+    <li>
+      <b><a href="https://github.com/thanushree2604/Audio-Player-App" target="_blank">
+        Audio Player App
+      </a></b>
+      — A mobile app for managing and playing local audio files using Android Studio.
+    </li>
+  </ul>
+</section>
+
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div>
+        <span>Python</span>
+        <span>Java</span>
+        <span>SQL</span>
+        <span>Data Analysis</span>
+        <span>Data Visualization</span>
+        <span>Machine Learning</span>
+        <span>Microsoft Office</span>
+        <span>Soft Skills</span>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><b>Bachelor’s in Computer Science (Data Science)</b> – Garden City University (2022–2026) | CGPA: 8.5</li>
+        <li><b>PUC – Science Stream</b> – Kapilamma PU College (2020–2022) | 85%</li>
+        <li><b>SSLC</b> – Navodaya High School (2020) | 94%</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>📞 +91 8310045539</p>
+      <p>📧 <a href="mailto:thanushree2612@gmail.com">thanushree2612@gmail.com</a></p>
+      <p>🌍 Bangalore, Karnataka</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/thanushree-n-s-20aa482a0/">LinkedIn</a> |
+         <a href="https://github.com/thanushree2604">GitHub</a></p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Thanushree N S | All Rights Reserved
+  </footer>
+</body>
+</html>
