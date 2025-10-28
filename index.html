@@ -41,20 +41,20 @@
     }
 
     header img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  object-fit: cover;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-header img:hover {
-  transform: scale(1.07);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-}
+    header img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
 
     header h1 {
       font-size: 2.2rem;
@@ -67,7 +67,24 @@ header img:hover {
       opacity: 0.95;
     }
 
-    /* ---------- Container Sections ---------- */
+    header a.resume-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #fff;
+      color: #2e7d32;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header a.resume-btn:hover {
+      background: #f1f1f1;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Container ---------- */
     .container {
       width: 90%;
       max-width: 900px;
@@ -99,7 +116,7 @@ header img:hover {
 
     ul {
       list-style-type: square;
-      padding-left: 20px;
+      padding-left: 25px;
     }
 
     a {
@@ -128,10 +145,29 @@ header img:hover {
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
+    /* ---------- Certifications & Internship ---------- */
+    .certifications ul,
+    .internship ul {
+      list-style-type: square;
+      padding-left: 25px;
+    }
+
+    .certifications li,
+    .internship li {
+      margin-bottom: 6px;
+      font-size: 15.5px;
+    }
+
+    .internship p {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
     /* ---------- Contact Section ---------- */
     .contact p {
       text-align: center;
       font-size: 15px;
+      margin: 5px 0;
     }
 
     /* ---------- Footer ---------- */
@@ -167,12 +203,7 @@ header img:hover {
     <img src="profile.jpg" alt="Thanushree N S" />
     <h1>Thanushree N S</h1>
     <p>Computer Science Student | Data Science & AI Enthusiast</p>
-    <a href="thanushree.pdf" target="_blank" 
-   style="display:inline-block; margin-top:15px; padding:10px 18px; background:#fff; color:#2e7d32; 
-          border-radius:25px; font-weight:bold; text-decoration:none; transition:0.3s;">
-  📄 Download Resume
-</a>
-
+    <a href="thanushree.pdf" target="_blank" class="resume-btn">📄 Download Resume</a>
   </header>
 
   <div class="container">
@@ -188,38 +219,37 @@ header img:hover {
     </section>
 
     <section class="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <b><a href="https://github.com/thanushree2604/Voice-Controlled-Object-Detection" target="_blank">
-        Voice Controlled Object Detection
-      </a></b>
-      — Integrated computer vision and speech recognition using YOLO and SpeechRecognition libraries.
-    </li>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <b><a href="https://github.com/thanushree2604/Voice-Controlled-Object-Detection" target="_blank">
+            Voice Controlled Object Detection
+          </a></b>
+          — Integrated computer vision and speech recognition using YOLO and SpeechRecognition libraries.
+        </li>
 
-    <li>
-      <b><a href="https://github.com/thanushree2604/Voice-Activated-Sign-Language-Detector" target="_blank">
-        Voice-Activated Sign Language Detector
-      </a></b>
-      — Real-time gesture recognition using Python, OpenCV, and MediaPipe with text-to-speech output.
-    </li>
+        <li>
+          <b><a href="https://github.com/thanushree2604/Voice-Activated-Sign-Language-Detector" target="_blank">
+            Voice-Activated Sign Language Detector
+          </a></b>
+          — Real-time gesture recognition using Python, OpenCV, and MediaPipe with text-to-speech output.
+        </li>
 
-    <li>
-      <b><a href="https://github.com/thanushree2604/ai-cheating-detection" target="_blank">
-        AI-Based Cheating Detection
-      </a></b>
-      — Developed a vision-based system for monitoring online exams with machine learning algorithms.
-    </li>
+        <li>
+          <b><a href="https://github.com/thanushree2604/ai-cheating-detection" target="_blank">
+            AI-Based Cheating Detection
+          </a></b>
+          — Developed a vision-based system for monitoring online exams with machine learning algorithms.
+        </li>
 
-    <li>
-      <b><a href="https://github.com/thanushree2604/Audio-Player-App" target="_blank">
-        Audio Player App
-      </a></b>
-      — A mobile app for managing and playing local audio files using Android Studio.
-    </li>
-  </ul>
-</section>
-
+        <li>
+          <b><a href="https://github.com/thanushree2604/Audio-Player-App" target="_blank">
+            Audio Player App
+          </a></b>
+          — A mobile app for managing and playing local audio files using Android Studio.
+        </li>
+      </ul>
+    </section>
 
     <section class="skills">
       <h2>Skills</h2>
@@ -241,6 +271,66 @@ header img:hover {
         <li><b>Bachelor’s in Computer Science (Data Science)</b> – Garden City University (2022–2026) | CGPA: 8.5</li>
         <li><b>PUC – Science Stream</b> – Kapilamma PU College (2020–2022) | 85%</li>
         <li><b>SSLC</b> – Navodaya High School (2020) | 94%</li>
+      </ul>
+    </section>
+
+    <section class="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>
+      <b><a href="CCNA Switching, Routing, and Wireless.pdf" target="_blank">
+        CCNA: Switching, Routing, and Wireless
+      </a></b> — Cisco Networking Academy
+    </li>
+
+    <li>
+      <b><a href="Introduction to Cybersecurity.pdf" target="_blank">
+        Introduction to Cybersecurity
+      </a></b> — Cisco Networking Academy
+    </li>
+
+    <li>
+      <b><a href="Partner PCAP - Programming.pdf" target="_blank">
+        PCAP – Programming Essentials in Python
+      </a></b> — Cisco / Python Institute
+    </li>
+
+    <li>
+      <b><a href="Partner NDG Linux Unhatched.pdf" target="_blank">
+        NDG Linux Unhatched
+      </a></b> — Cisco Networking Academy
+    </li>
+
+    <li>
+      <b><a href="Introduction to Bitcoin.pdf" target="_blank">
+        Introduction to Bitcoin
+      </a></b> — AICTE (OnWingspan) |
+      <i><a href="https://verify.onwingspan.com/" target="_blank">Verify</a></i>
+    </li>
+
+    <li>
+      <b><a href="Essentials for English Speeches and Presentations.pdf" target="_blank">
+        Essentials for English Speeches and Presentations
+      </a></b> — Peking University (Coursera)
+    </li>
+
+    <li>
+      <b>Data Science Course Completion Certificate</b> — EDU TANTR  
+      <br>
+      <small>Certified by ISO 21001:2018, AICTE, and Ministry of MSME | Issued: November 2025</small>
+    </li>
+  </ul>
+</section>
+
+
+    <section class="internship">
+      <h2>Internship Experience</h2>
+      <p><b>Data Science Intern — EDU TANTR, Bengaluru, India</b></p>
+      <p><i>August 2025 – November 2025</i></p>
+      <ul>
+        <li>Gained hands-on experience in data analysis, model building, and real-world problem solving.</li>
+        <li>Collaborated with teams to complete assigned tasks and projects in a professional work environment.</li>
+        <li>Exposure to tools and techniques used in modern data science workflows.</li>
       </ul>
     </section>
 
